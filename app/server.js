@@ -3,16 +3,18 @@ const bodyParser = require('body-parser');
 const mysql = require('mysql');
 const app = express();
 const cors = require('cors');
-const port = 3000;
+const port = process.env.MYSQL_ADDON_PORT || 3000;
+require('dotenv').config();
 
 app.use(cors());
 app.use(bodyParser.json());
 
 const connection = mysql.createConnection({
-    host: 'localhost',
-    user: 'root',
-    password: '',
-    database: 'estudiantes_cac'
+    host: process.env.MYSQL_ADDON_HOST,
+    user: process.env.MYSQ_ADDON_USER,
+    password: process.env.MYSQL_ADDON_PASSWORD,
+    database: process.env.MYSQL_ADDON_DB,
+    port: process.env.MYSQL_ADDON_PORT  
 });
 
 connection.connect(err => {
