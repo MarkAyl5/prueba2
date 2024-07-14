@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="login.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <style>
+        .error {
+            border: 2px solid red;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo-container">
+                <a href="index.html">
+                <img src="/app/imagenes/logos/Logos_BA_Agencia.jpg" alt="logo BsAs" class="logo" >
+                </a>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <div class="texto-login">
+            <div class="saludo-login">
+                <h1>Hola de nuevo!</h1>
+                <p id="inicia-sesion-para-cont"> Inicia sesion para continuar</p>
+            </div>
+        </div>
+
+        <div class="form-login">
+            <div class="formulario">
+
+                <form id="login-form">
+
+                    <div class="email-form">
+                        <label for="username">Email</label>
+                        <input type="email" id="username" placeholder="Ingresa aquí tu email...">
+                    </div>
+                    <div class="password-form">
+                        <label for="password">Contraseña</label>
+                        <input type="password" id="password" placeholder="Ingresa aquí tu contraseña..." required>
+                        
+                    </div>
+
+                    <button type="submit" id="login-boton"><a href="/app/lobby/lobby.html">Iniciar Sesion</a></button>
+                    
+                </form>
+            </div>
+        </div>
+    </main>
+    <script src="login.js"></script>
+</body>
+</html>

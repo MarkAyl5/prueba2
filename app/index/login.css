@@ -1,0 +1,130 @@
+* {
+    font-family: "Montserrat", sans-serif;
+  }
+  body {
+    margin: 0;
+    background-color: #f0ebe3;
+  }
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: #f4ce14;
+    color: white;
+    box-shadow: 10px 5px 5px gray;
+    margin-bottom: 10px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 50px;
+    z-index: 1;
+  }
+  
+  /* Estilos y animaciones para el logo */
+  .logo-container {
+    display: flex;
+    align-items: center;
+  }
+  
+  .logo {
+    width: 200px;
+    border-radius: 10px;
+    transition: transform 0.6s ease-in-out;
+    transform-style: preserve-3d;
+  }
+  
+  .logo:hover {
+    transform: rotateY(180deg);
+  }
+  main{
+    height: 800px;
+    display: flex;
+    margin-top: 120px;
+}
+.texto-login{
+    flex: 1;
+}
+.saludo-login{
+    display: flex;
+    flex-direction: column;
+    height: 400px;
+    justify-content: center;
+    padding-left: 107px;
+}
+.saludo-login h1{
+    font-size: 48px;
+}
+#inicia-sesion-para-cont{
+    margin-top: 50px;
+    font-size: 24px;
+}
+
+.form-login{
+    
+    flex: 1;
+    
+}
+.formulario{
+    padding: 5px;
+    border: 0.5px solid #b4b4b4;
+    border-radius: 10px;
+    width: 492px;
+    height: 420px;
+    margin-left: 100px;
+    margin-top: 80px;
+    background-color: #FAFAFA;
+    box-shadow: 0px 5px 5px 1px #b4b4b4;
+
+
+}
+form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+form 
+label{
+    font-size: 18px;
+    font-weight: 400;
+}
+input{
+    width: 403px;
+    height: 56px;
+    border-radius: 9px;
+    border: 0.5px solid #b4b4b4;
+    background-color: #FAFAFA;
+    padding: 3px;
+}
+
+.email-form{
+    display: flex;
+    flex-direction: column;
+    margin-top: 54px;
+    font-size: 18px;
+}
+.password-form{
+    display: flex;
+    flex-direction: column;
+    margin-top: 26px;
+}
+#login-boton{
+    margin-top: 50px;
+    width: 350px;
+    height: 56px;
+    border: 0.5 solid #b4b4b4;
+    background-color: #415191;
+    color:#FAFAFA;
+    border-radius: 9px;
+}
+#login-boton a{
+  color: white;
+  text-decoration: none;
+}
+#login-boton:hover{
+    background-color: #354474;
+  }
+#login-boton:active{
+    background-color: #758ef1;
+  }

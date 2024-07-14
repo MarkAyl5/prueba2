@@ -1,0 +1,149 @@
+* {
+    font-family: "Montserrat", sans-serif;
+  }
+  body {
+    margin: 0;
+    background-color: #f0ebe3;
+  }
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: #f4ce14;
+    color: white;
+    box-shadow: 10px 5px 5px gray;
+    margin-bottom: 10px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 50px;
+    z-index: 1;
+  }
+  
+  /* Estilos y animaciones para el logo */
+  .logo-container {
+    display: flex;
+    align-items: center;
+  }
+  
+  .logo {
+    width: 200px;
+    border-radius: 10px;
+    transition: transform 0.6s ease-in-out;
+    transform-style: preserve-3d;
+  }
+  
+  .logo:hover {
+    transform: rotateY(180deg);
+  }
+
+  aside{
+    height: 870px;
+    
+    width: 350px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #D9D9D9;
+    flex: 1;
+    position: fixed;
+    top: 50px;
+    left: 0;
+    height: calc(100% - 50px);
+    overflow: auto;
+    z-index: 1;
+    margin-top: 20px;
+    
+  }
+
+  .columna{
+    border: 1px solid black;
+    height: 90%;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    background-color: #f3f3f3;
+
+  }
+  
+  .columna-item{
+    width: 100%;
+    height: 80px;
+  }
+  
+  .columna-item a{
+    border: 0.3px solid black;
+    text-decoration: none;
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    gap: 8px;
+
+  }
+  .columna-item a img{
+    height: 24px;
+  }
+  .columna-item a p{
+    font-size: 18px;
+    
+
+ }
+ .columna-item:first-child{
+    font-weight: 600;
+    font-size: 20px;
+ }
+
+ .caja-contenido{
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 80px;
+    margin-left: 353px;
+    padding: 20px;
+    height: calc(100% - 50px);
+    width: calc(90%- 200px);
+    overflow: auto;
+    height: 800px;
+ }
+ .profesores-h2{
+    
+    width: 100%;
+    margin-top: -100px;
+    margin-bottom: 50px;
+ }
+ .profesores-caja{
+    width: 100%;
+    display: flex;
+    height: 500px;
+    justify-content: space-around;
+ }
+ .profesores-h2 h2{
+    font-size: 42px;
+ }
+ .profesores-h2 p{
+    
+ }
+ .profesores-card{
+    box-shadow: 2px 2px 2px 1px #415191;
+    width: 350px;
+    padding: 5px;
+    border-radius: 10px;
+    background-color: #f3f3f3;
+ }
+
+.foto-profe{
+    
+    height: 200px;
+    padding: 5px;
+}
+.foto-profe img{
+    border-radius: 15px;
+    width: 100%;
+    height: 100%;
+}

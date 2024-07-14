@@ -1,0 +1,453 @@
+* {
+  font-family: "Montserrat", sans-serif;
+}
+body {
+  margin: 0;
+  background-color: #f0ebe3;
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  background-color: #f4ce14;
+  color: white;
+  box-shadow: 10px 5px 5px gray;
+  margin-bottom: 10px;
+}
+
+/* Estilos y animaciones para el logo */
+.logo-container {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  width: 200px;
+  border-radius: 10px;
+  transition: transform 0.6s ease-in-out;
+  transform-style: preserve-3d;
+}
+
+.logo:hover {
+  transform: rotateY(180deg);
+}
+/* ---------------------------------- */
+
+/* Barra navegacion */
+.navegacion ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  gap: 20px;
+}
+
+.navegacion li {
+  display: flex;
+  align-items: center;
+  transition: border 1s ease-in-out, background-color 0.5s ease-in-out;
+  height: 50px;
+}
+
+.navegacion li:hover {
+  padding: 0px 10px 0px 10px;
+  border: 2px solid rgb(74, 73, 73);
+  background-color: #eae2bd;
+  border-radius: 20px;
+  opacity: 0.7;
+}
+
+.navegacion a {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: black;
+}
+
+.navegacion span {
+  display: flex;
+  align-items: center;
+  margin-right: 8px;
+}
+
+.navegacion img {
+  width: 20px;
+  height: 20px;
+}
+/* ------------------------------ */
+
+/* Hero Image */
+.hero-image {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+  height: 700px;
+  margin-bottom: 10px;
+  position: relative;
+  overflow: hidden;
+}
+
+.hero-image img {
+  width: 100%;
+  height: auto;
+  display: block;
+  transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
+}
+.hero-image:hover img {
+  transform: scale(1.1);
+  opacity: 0.7;
+}
+.hero-image:hover .hero-card {
+  bottom: -50px;
+}
+
+.imagen-hero {
+  border: 2px solid black;
+  width: 60%;
+}
+.imagen-hero img {
+  width: 100%;
+  height: 100%;
+}
+
+.hero-card {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.7);
+  color: white;
+  box-sizing: border-box;
+  transition: bottom 0.5s ease-in-out;
+  width: 100%;
+  padding: 20px;
+}
+.hero-card h2 {
+  font-size: 40px;
+}
+.hero-card p {
+  font-size: 20px;
+}
+/* ------------------------------------- */
+
+/* carousel de tecnologias */
+.tecnologias-container {
+  height: 100px;
+  overflow: hidden;
+  position: relative;
+}
+.tecnologias-items {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+  list-style: none;
+  animation: slide 5s linear infinite;
+}
+.tecnologias-items img {
+  width: 50px;
+  height: auto;
+  margin: 10px 75px;
+}
+@keyframes slide {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+/* ---------------------------------- */
+
+/* Temario del curso */
+.temario {
+  margin-bottom: 10px;
+}
+
+.temario h2 {
+  text-align: center;
+  font-size: 40px;
+}
+.temario-cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 20px;
+  justify-content: space-around;
+  padding: 20px;
+  list-style: none;
+}
+.temario-item {
+  background-color: #f5f7f8;
+  padding: 20px;
+  text-align: center;
+  border: 1px solid #333;
+  font-size: 20px;
+  border-radius: 10px;
+  box-shadow: 10px 5px 5px gray;
+  margin-bottom: 10px;
+}
+
+.temario-item div img{
+  height: 50px;
+}
+/* --------------------------------- */
+
+/* Preguntas frecuentes */
+.preguntas-frecuentes {
+  display: flex;
+  flex-direction: column;
+  height: 850px;
+
+  margin-bottom: 10px;
+}
+
+.texto-faq h2 {
+  font-size: 40px;
+  text-align: center;
+}
+.texto-faq p {
+  font-size: 24px;
+  font-weight: 400;
+}
+.preguntas-cards {
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  height: 700px;
+  grid-gap: 20px;
+  list-style: none;
+  padding: 10px;
+}
+.preguntas-item {
+  padding: 15px;
+  border: 1px solid black;
+  margin-bottom: 10px;
+  background-color: #f4ce14;
+  border-radius: 10px;
+  box-shadow: 10px 5px 5px gray;
+}
+.preguntas-item-pregunta h3 {
+  font-size: 24px;
+}
+.preguntas-item-pregunta img{
+  height: 50px;
+}
+/* ----------------------------- */
+
+/* Formulario de contacto */
+.formulario-contacto {
+  margin-bottom: 10px;
+  height: 780px;
+  margin: 20px 0px;
+  display: flex;
+}
+.form-text {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-items: center;
+}
+.form-img {
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  margin-top: 40px;
+}
+
+.form-img img {
+  width: 50px;
+  height: 50px;
+}
+.form-img h2 {
+  display: inline;
+  height: 70px;
+  font-size: 40px;
+  margin-bottom: 10px;
+  margin-left: 10px;
+}
+.form-p {
+  font-size: 24px;
+  margin-top: -350px;
+  text-align: center;
+}
+
+.caja-formulario {
+  width: 60%;
+  
+}
+
+#formulario-inscripcion{
+display: flex;
+flex-direction: column;
+justify-content: space-around;
+align-items: center;
+padding: 50px;
+padding-top: 150px;
+}
+
+#formulario-inscripcion div{
+  margin-bottom: 10px;
+  width: 700px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  padding: 10px;
+  border-radius: 5px;
+}
+#formulario-inscripcion div input, select{
+  height: 35px;
+  border-radius: 5px;
+  box-shadow: 5px 3px 5px gray;
+  border: 1px solid black;
+}
+
+
+.boton-enviar {
+  width: 700px;
+  height: 45px;
+  border-radius: 5px;
+  background-color: #415191;
+  color: white;
+  font-weight: 500;
+  box-shadow: 5px 3px 5px gray;
+  border: 1px solid black;
+  margin-top: 20px;
+}
+.boton-enviar:hover{
+  background-color: #354474;
+}
+.boton-enviar:active{
+  background-color: #758ef1;
+}
+/* ----------------------------------- */
+
+/* Footer */
+#aboutUs {
+  width: 100%;
+  height: 60px;
+  background-color: #f4ce14;
+}
+.lista-footer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  list-style: none;
+  padding-top: 15px;
+}
+.lista-footer li {
+  align-items: center;
+  display: inline-flex;
+  justify-content: center;
+  text-align: center;
+}
+.lista-footer a {
+  text-decoration: none;
+  color: black;
+}
+/* ------------------------------ */
+
+/* Media Queries */
+
+/* Mobile Styles (up to 600px) */
+@media (max-width: 600px) {
+  .navegacion ul {
+    flex-direction: column;
+  }
+
+  .hero-image {
+    height: 300px;
+  }
+
+  .hero-card h2 {
+    font-size: 24px;
+  }
+
+  .hero-card p {
+    font-size: 14px;
+  }
+
+  .temario-cards {
+    grid-template-columns: 1fr;
+  }
+
+  .preguntas-cards {
+    grid-template-columns: 1fr;
+  }
+
+  .formulario-contacto {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .form-text,
+  .formulario {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  #formulario-contacto div {
+    width: 90%;
+  }
+
+  .boton-enviar {
+    width: 90%;
+  }
+}
+
+/* Tablet Styles (600px to 1024px) */
+@media (min-width: 601px) and (max-width: 1024px) {
+  .navegacion ul {
+    flex-direction: column;
+  }
+
+  .hero-image {
+    height: 500px;
+  }
+
+  .hero-card h2 {
+    font-size: 32px;
+  }
+
+  .hero-card p {
+    font-size: 18px;
+  }
+
+  .temario-cards {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .preguntas-cards {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .formulario-contacto {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .form-text,
+  .formulario {
+    width: 80%;
+    margin-bottom: 20px;
+  }
+
+  #formulario-contacto div {
+    width: 100%;
+  }
+
+  .boton-enviar {
+    width: 100%;
+  }
+}
+
+/* Desktop Styles (1024px and above) */
+@media (min-width: 1025px) {
+  /* No changes needed for larger screens as they use the default styles */
+}

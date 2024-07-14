@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./imagenes/iconos/favicon-32x32.png"
+        type="image/png">
+    <title>Tecnología en Codo a Codo</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <style>
+        .error {
+            border: 2px solid red;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        
+        <nav>
+
+            <div class="logo-container">
+                <img src="/app/imagenes/logos/Logos_BA_Agencia.jpg" alt="logo BsAs" class="logo" >
+            </div>
+
+            <div class="navegacion">
+                <ul>
+                    <li><a href="#inicio">
+                        <span>
+                            <img src="/app/imagenes/iconos/home-outline.svg" alt="link home">
+                        </span>Inicio 
+                    </a>
+                    </li>
+
+                    <li>
+                        <a href="#tecnologias">
+                            <span>
+                                <img src="/app/imagenes/iconos/tecnologias.svg" alt="link tecnologias-carrusel">
+                            </span>Tecnologías
+                        </a>
+                    </li>
+
+                    <li><a href="#temario"><span><img
+                                    
+                                    src="/app/imagenes/iconos/temario.svg"
+                                    alt="link temario"></span>Temario </a></li>
+                    <li><a href="#faq"><span><img
+                                   
+                                    src="/app/imagenes/iconos/faq_icon.svg"
+                                    alt="link faq"></span>Preguntas
+                            Frecuentes</a>
+                    </li>
+                    <li><a href="#formularioContacto"><span><img
+                                    
+                                    src="/app/imagenes/iconos/formulario.svg"
+                                    alt="link formulario"></span>Formulario
+                            de Inscripción</a></li>
+                    <li><a href="login.html"><span><img
+                                    
+                                    src="/app/imagenes/iconos/usuario-de-perfil.png"
+                                    alt="link contacto"></span>Login</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+
+        <!-- Imagen y descripcion ppal -->
+        <section class="hero-image">
+            <div>
+                <img src="/app/imagenes/hero2actualizada.png" alt="hero-image">
+                <div class="hero-card">
+
+                    <h2>Desarrollo Full Stack Node JS</h2>
+                    <p>Este curso brinda una visión integral del desarrollo web,
+                        dividido en dos módulos:
+                        Frontend y Backend.
+                        Durante el curso, se aprenderán los lenguajes y
+                        herramientas esenciales como
+                        HTML, CSS y Javascript para desarrollar sitios web del
+                        lado del cliente y Node JS
+                        junto con Express para crear servicios y aplicaciones
+                        backend.
+                    </p>
+                </div>
+            </div>
+        </section>
+        <!-- Tecnologías del curso -->
+        <div class="tecnologias-container">
+            <!-- Carrusel de imagenes de las Tecnologías del curso -->
+            <ul class="tecnologias-items">
+
+                <li class="tecnologia-item">
+                    <img src="/app/imagenes/iconos/html5.svg"
+                        alt="tecnologia HTML">
+                </li>
+
+                <li class="tecnologia-item">
+                    <img src="/app/imagenes/iconos/CSS3.svg" alt="tecnologia CSS">
+                </li>
+
+                <li class="tecnologia-item">
+                    <img src="/app/imagenes/iconos/javascript.svg"
+                        alt="tecnologia javascript">
+                </li>
+
+                <li class="tecnologia-item">
+                    <img src="/app/imagenes/iconos/nodejs.svg"
+                        alt="tecnologia nodejs">
+                </li>
+
+                <li class="tecnologia-item">
+                    <img src="/app/imagenes/iconos/visual.svg"
+                        alt="tecnologia visual code">
+                </li>
+
+                <li class="tecnologia-item">
+                    <img src="/app/imagenes/iconos/github.svg"
+                        alt="tecnologia github">
+                </li>
+
+                <li class="tecnologia-item">
+                    <img src="/app/imagenes/iconos/mysql.svg"
+                        alt="tecnologia mysql">
+                </li>
+                <li class="tecnologia-item">
+                    <img src="/app/imagenes/iconos/sequelize.svg"
+                        alt="tecnologia sequelize">
+                </li>
+
+            </ul>
+        </div>
+
+        <!-- Cards con Temario del curso -->
+        <section class="temario">
+
+            <h2>Tecnologias a aprender durante la cursada</h2>
+
+            <ul class="temario-cards">
+
+                <li class="temario-item">
+                    <div>
+                        <h2>Herramientas de Diseño</h2>
+                        <img 
+                            src="/app/imagenes/iconos/visual.svg"
+                            alt="temario herramientas diseño">
+                    </div>
+                    <p>Conocerás las herramientas necesarias para crear y
+                        diseñar layouts, wireframes
+                        y prototipos de tus sitios web antes de pasar al código
+                    </p>
+                </li>
+                <li class="temario-item">
+
+                    <div>
+
+                        <h2>HTML y CSS</h2>
+
+                        <img 
+                            src="/app/imagenes/iconos/html5.svg"
+                            alt="temario html Css">
+
+                        <img 
+                            src="/app/imagenes/iconos/CSS3.svg"
+                            alt="temario html Css">
+
+                    </div>
+                    <p>
+                    Aprenderás a crear estructuras en HTML y trabajar
+                    con
+                    conceptos como
+                    semántica y accesibilidad. Además le darás estilos a tus
+                    sitios mediante las
+                    propiedades que ofrece CSS.
+
+                    </p>
+
+                </li>
+                <li class="temario-item">
+                    <div>
+                        <h2>Maquetación</h2>
+                        <img 
+                            src="/app/imagenes/iconos/maquetacion.svg"
+                            alt="temario Maquetación">
+                    </div>
+                    <p>Aprenderás todo lo necesario para crear cualquier tipo de
+                        estructura o layout
+                        web
+                    </p>
+                </li>
+                <li class="temario-item">
+                    <div>
+                        <h2>Javascript</h2>
+                        <img 
+                            src="/app/imagenes/iconos/javascript.svg"
+                            alt="temario Javascript">
+                    </div>
+                    <p>Aprenderás a programar del lado del cliente mediante el
+                        lenguaje líder para el
+                        desarrollo web
+                    </p>
+                </li>
+                <li class="temario-item">
+                    <div>
+                        <h2>Backend con NodeJS</h2>
+                        <img 
+                            src="/app/imagenes/iconos/nodejs.svg"
+                            alt="temario Backend con NodeJS">
+                    </div>
+                    <p>Aprenderás a trabajar Javascript del lado del servidor
+                        utilizando el entorno de
+                        ejecución junto al framework más conocidos y demandados
+                        del mercado,
+                        creando soluciones backend para lograr sitios y páginas
+                        web dinámicas.
+                    </p>
+                </li>
+                <li class="temario-item">
+                    <div>
+                        <h2>Base de datos</h2>
+                        <img 
+                            src="/app/imagenes/iconos/mysql.svg"
+                            alt="temario Backend con NodeJS">
+                    </div>
+                    <p>Aprenderás a trabajar con uno de los gestores de base de
+                        datos más utilizados
+                        en la actualidad y podrás conocer la sintaxis SQL, el
+                        lenguaje fundamental
+                        para comunicarte con una base de datos.
+
+                    </p>
+                </li>
+            </ul>
+
+        </section>
+        <!-- Preguntas frecuentes -->
+
+        <section class="preguntas-frecuentes">
+            <div class="texto-faq">
+                <h2 class="preguntas-frecuentes-titulo">Preguntas frecuentes
+                    sobre el curso</h2>
+
+            </div>
+
+            <ul class="preguntas-cards">
+                <li class="preguntas-item">
+                    <div class="preguntas-item-pregunta">
+                        <img 
+                            src="/app/imagenes/iconos/pregunta.svg"
+                            alt="preguntas frecuentes">
+                        <h3>¿Qué temas y habilidades aprenderé en un curso de
+                            HTML?</h3>
+                    </div>
+                    <p class="preguntas-item-respuesta">En un curso de HTML,
+                        aprenderás los fundamentos del
+                        desarrollo web centrados en la creación y estructuración
+                        de contenido para páginas web. Aprenderás a crear y
+                        estructurar páginas web usando etiquetas HTML, como
+                        &lt;p&gt;, &lt;a &gt;, &lt;div&gt;, y &lt;span&gt;.
+                        También verás cómo incluir
+                        imágenes, enlaces, tablas y formularios.
+                    </p>
+                </li>
+                <li class="preguntas-item">
+                    <div class="preguntas-item-pregunta">
+                        <img 
+                            src="/app/imagenes/iconos/pregunta.svg"
+                            alt="preguntas frecuentes">
+                        <h3>¿Qué aprenderé en un curso de JavaScript?</h3>
+                    </div>
+                    <p class="preguntas-item-respuesta">Aprenderás a usar
+                        JavaScript para hacer páginas web interactivas. Esto
+                        incluye trabajar con variables, funciones, eventos y
+                        modificar el contenido de la página dinámicamente.
+                    </p>
+                </li>
+                <li class="preguntas-item">
+                    <div class="preguntas-item-pregunta">
+                        <img 
+                            src="/app/imagenes/iconos/pregunta.svg"
+                            alt="preguntas frecuentes">
+                        <h3>¿Para qué se usa GitHub?</h3>
+                    </div>
+                    <p class="preguntas-item-respuesta">GitHub se usa para
+                        almacenar, gestionar y compartir código. Facilita la
+                        colaboración entre desarrolladores mediante control de
+                        versiones y permite seguir cambios en los proyectos.
+                    </p>
+                </li>
+                <li class="preguntas-item">
+                    <div class="preguntas-item-pregunta">
+                        <img 
+                            src="/app/imagenes/iconos/pregunta.svg"
+                            alt="preguntas frecuentes">
+                        <h3>¿Qué es Node.js y para qué se usa?</h3>
+                    </div>
+                    <p class="preguntas-item-respuesta">Node.js es un entorno de
+                        ejecución para JavaScript fuera del navegador. Se usa
+                        para crear aplicaciones del lado del servidor, como APIs
+                        y servicios web.
+                    </p>
+                </li>
+                <li class="preguntas-item">
+                    <div class="preguntas-item-pregunta">
+                        <img 
+                            src="/app/imagenes/iconos/pregunta.svg"
+                            alt="preguntas frecuentes">
+                        <h3>¿Qué puedo esperar de un curso de programación web?
+                        </h3>
+                    </div>
+                    <p class="preguntas-item-respuesta">Aprenderás a crear y
+                        diseñar sitios web utilizando HTML para la estructura,
+                        CSS para el estilo y JavaScript para la interactividad.
+                        Además, te enseñarán a trabajar con frameworks y
+                        bibliotecas, gestionar bases de datos, y configurar
+                        servidores para construir aplicaciones web completas y
+                        dinámicas. También adquirirás habilidades en control de
+                        versiones con Git y despliegue de aplicaciones en la
+                        web.
+                    </p>
+                </li>
+                <li class="preguntas-item">
+                    <div class="preguntas-item-pregunta">
+                        <img 
+                            src="/app/imagenes/iconos/pregunta.svg"
+                            alt="preguntas frecuentes">
+                        <h3>¿Cuánto tiempo dura un curso de programación web?
+                        </h3>
+                    </div>
+                    <p class="preguntas-item-respuesta">Por lo general, un curso
+                        de programación web tiene una duración de 6 meses, que
+                        equivale a un semestre académico. Durante este período,
+                        los estudiantes tienen la oportunidad de profundizar en
+                        los conceptos fundamentales y desarrollar habilidades
+                        prácticas mediante la realización de proyectos y
+                        ejercicios prácticos.
+                    </p>
+                </li>
+            </ul>
+        </section>
+        <!-- Formulario de contacto y comentarios -->
+        <section class="formulario-contacto" id="formularioContacto">
+
+            <div class="form-text">
+
+                <div class="form-img">
+                    <img src="/app/imagenes/iconos/formulario.svg"
+                        alt="formulario contacto">
+
+                    <h2>Formulario de Inscripción</h2>
+                </div>
+
+                <div class="form-p">
+                    <p>Si deseas inscribirte, no dudes en contactarnos
+                        utilizando el
+                        formulario a continuación:</p>
+                </div>
+
+            </div>
+
+            <div class="caja-formulario">
+
+                <form id="formulario-inscripcion" onsubmit="register(event)">
+
+                    <input type="hidden" id="record-id">
+                    <div>
+                        <label for="nombre">Nombre:</label>
+                        <input type="text" id="nombre" required maxlength="10">
+                    </div>
+
+                    <div>
+                        <label for="rol">Rol:</label>
+                        <input type="text" id="rol" required>
+                    </div>
+
+                    <div>
+                        <label for="comision">Comisión:</label>
+                        <select name="comision" id="comision">
+                            <option value="24135">24135</option>
+                            <option value="24137">24137</option>
+                            <option value="24138">24138</option>
+                        </select>
+
+                        
+                    </div>
+
+                    <div>
+                        <label for="fechaDeInscripcion">Fecha de Inscripción:</label>
+                        <input type="date" id="fechaDeInscripcion" required>
+                    </div>  
+
+                    <button type="submit" class="boton-enviar">Guardar</button>
+                </form>
+
+                
+
+            </div>
+
+        </section>
+
+    </main>
+    <!-- Contacto y redes-->
+    <footer id="aboutUs">
+        <ul class="lista-footer">
+            <li><a href="#"><span><img src="/app/imagenes/iconos/github.svg"
+                            alt="logo github"
+                            style="width: 30px; height: 30px;"></span>GitHub</a>
+            </li>
+            <li><a href="#"><span><img src="/app/imagenes/iconos/contacto.svg"
+                            alt="logo github"
+                            style="width: 30px; height: 30px;"></span>Email</a>
+            </li>
+            <li><a href="#"><span><img src="/app/imagenes/iconos/instagram.svg"
+                            alt="logo github"
+                            style="width: 30px; height: 30px;"></span>Instagram</a>
+            </li>
+            <li><a href="#"><span><img src="/app/imagenes/iconos/linkedin.png"
+                            alt="logo github"
+                            style="width: 30px; height: 30px;"></span>Linkedin</a>
+            </li>
+        </ul>
+    </footer>
+    <script src="index.js"></script>
+</body>
+
+</html>
